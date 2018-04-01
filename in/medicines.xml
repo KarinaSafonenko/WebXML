@@ -1,0 +1,451 @@
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.example.com/medicines"
+           xsi:schemaLocation="http://www.example.com/medicines  medicines.xsd">
+    <medicament id="medsn001" name="Kaptopril">
+        <dosage portion="6-12 mg." period="3 times a day"/>
+        <fabricators>
+            <fabricator pharm="Farmacor production">
+                <certificate number="a1332" issue=" 2017-02-05" expiration="2018-03-05"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type></type>
+                                <quantity>20 pieces</quantity>
+                                <price>3 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>40 pieces</quantity>
+                                <price>5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+            <fabricator pharm="Farmland">
+                <certificate number="akj32" issue="2017-02-01" expiration="2019-03-25"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>50 pieces</quantity>
+                                <price>2.14 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>20 pieces</quantity>
+                                <price>1.74 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Angiopril"></analog>
+            <analog substitute="Blocordil"></analog>
+            <analog substitute="Kapoten"></analog>
+        </analogs>
+    </medicament>
+    <medicament id="medsn002" name="Cetrifacson">
+        <dosage portion="1-2 g." period="3 times a day"/>
+        <fabricators>
+            <fabricator pharm="Shrea Life">
+                <certificate number="jhd89" issue="2017-01-05" expiration="2019-03-05"/>
+                <versions>
+                    <version form="powder">
+                        <packs>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>50 pieces</quantity>
+                                <price>823 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                    <version form="flacon">
+                        <packs>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>1 piece</quantity>
+                                <price>35 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Loracson"></analog>
+            <analog substitute="Sulbatrokson"></analog>
+        </analogs>
+    </medicament>
+    <supplement name="Fish fat" id="hgf3">
+        <dosage portion="1-2 capsule" period="2-3 times a day"/>
+        <fabricators>
+            <fabricator pharm="RealCaps">
+                <certificate number="fkj78" expiration="2019-03-03"/>
+                <versions>
+                    <version form="capsule">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>30 pieces</quantity>
+                                <price>4.04 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin A</vitamin>
+            <vitamin>Vitamin D</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="oi8" name="Gematogen">
+        <dosage portion="1 piece" period="2 times a day"/>
+        <fabricators>
+            <fabricator pharm="Loda">
+                <certificate number="i9" expiration="2015-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>2 rub</price>
+                            </pack>
+                            <pack>
+                                <type>soft</type>
+                                <quantity>1 piece</quantity>
+                                <price>1.5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin C</vitamin>
+            <vitamin>Vitamin D</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="poi8" name="Muslie">
+        <dosage portion="1 piece" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="RainBow">
+                <certificate number="opokkl7" issue="2012-05-09" expiration="2013-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>2.5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin C</vitamin>
+            <vitamin>Vitamin A</vitamin>
+        </vitamins>
+    </supplement>
+    <medicament id="sj9" name="Lolokard">
+        <dosage portion="100 mg." period="2 times a day"/>
+        <fabricators>
+            <fabricator pharm="Farmacor production">
+                <certificate number="uuy0" issue=" 2017-02-05" expiration="2018-03-05"/>
+                <versions>
+                    <version form="sirup">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>7 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+            <fabricator pharm="Farmland">
+                <certificate number="jh8" issue="2017-02-01" expiration="2019-03-25"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type>soft</type>
+                                <quantity>20 pieces</quantity>
+                                <price>8.14 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>20 pieces</quantity>
+                                <price>9.74 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Validol"></analog>
+            <analog substitute="Korvalol"></analog>
+        </analogs>
+    </medicament>
+    <supplement id="kh7" name="Proif">
+        <dosage portion="7 mg" period="3 times a day"/>
+        <fabricators>
+            <fabricator pharm="Project">
+                <certificate number="hjg8" issue="2012-03-09" expiration="2013-06-19"/>
+                <versions>
+                    <version form="bottle">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>7 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin F</vitamin>
+            <vitamin>Vitamin E</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="hgf6" name="Plumb">
+        <dosage portion="2-3 pieces" period="5 times a day"/>
+        <fabricators>
+            <fabricator pharm="Sweet">
+                <certificate number="dfg9" issue="2012-05-09" expiration="2013-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>5 rub</price>
+                            </pack>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>1 piece</quantity>
+                                <price>4.5 rub</price>
+                            </pack>
+                            <pack>
+                                <type>soft</type>
+                                <quantity>1 piece</quantity>
+                                <price>4 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin C</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="djg5" name="Askorbinovaya kislota">
+        <dosage portion="3 pieces" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="Sweet Pharm">
+                <certificate number="djh8" issue="2012-02-09" expiration="2013-06-01"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>1.5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin C</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="dg9" name="Kisle">
+        <dosage portion="3 pieces" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="Farmacor">
+                <certificate number="dj7" issue="2012-01-09" expiration="2012-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>2.5 rub</price>
+                            </pack>
+                            <pack>
+                                <type>soft</type>
+                                <quantity>1 piece</quantity>
+                                <price>4.5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin M</vitamin>
+            <vitamin>Vitamin N</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="jhg7" name="Pristle">
+        <dosage portion="1 piece" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="Sweet">
+                <certificate number="jhjj8" issue="2017-05-09" expiration="2017-09-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>9 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin A</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="hgf7" name="Feed">
+        <dosage portion="5 pieces" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="RainBow">
+                <certificate number="mhj9" issue="2015-05-09" expiration="2017-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>5 pieces</quantity>
+                                <price>5.5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin F</vitamin>
+            <vitamin>Vitamin E</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="hf6" name="Ion">
+        <dosage portion="1 mg" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="RainBow">
+                <certificate number="e7" issue="2012-05-09" expiration="2013-06-05"/>
+                <versions>
+                    <version form="sirup">
+                        <packs>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>1 piece</quantity>
+                                <price>100 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin I</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="ujhg7" name="Opelen">
+        <dosage portion="1 piece" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="Sweet Pharm">
+                <certificate number="yut7" issue="2012-05-09" expiration="2013-06-05"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>8 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin C</vitamin>
+            <vitamin>Vitamin A</vitamin>
+        </vitamins>
+    </supplement>
+    <supplement id="gf7" name="Fit Muslie">
+        <dosage portion="1 piece" period=" a day"/>
+        <fabricators>
+            <fabricator pharm="Sweetly">
+                <certificate number="gff9" issue="2018-05-09" expiration="2018-10-09"/>
+                <versions>
+                    <version form="bar">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>1 piece</quantity>
+                                <price>3 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <vitamins>
+            <vitamin>Vitamin E</vitamin>
+            <vitamin>Vitamin F</vitamin>
+            <vitamin>Vitamin C</vitamin>
+            <vitamin>Vitamin A</vitamin>
+        </vitamins>
+    </supplement>
+    <medicament id="fgdg6" name="Solnicon">
+        <dosage portion="6-8 mg." period="6 times a day"/>
+        <fabricators>
+            <fabricator pharm="Farmacor production">
+                <certificate number="jg8" issue=" 2017-02-05" expiration="2018-03-05"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>20 pieces</quantity>
+                                <price>12 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>40 pieces</quantity>
+                                <price>18 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Lolcard"></analog>
+        </analogs>
+    </medicament>
+</medicines>

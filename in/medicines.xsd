@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/medicines"
+        xmlns:tns="http://www.example.com/medicines"
+        elementFormDefault="qualified">
+    <element name="medicines">
+        <complexType>
+            <sequence>
+                <element ref="tns:medicine"  maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="medicine" type="tns:Medicine"  abstract="true"/>
+    <complexType name="Medicine">
+        <sequence>
+            <element name="dosage" type="tns:Dosage" />
+            <element name="fabricators">
+                <complexType>
+                    <sequence>
+                        <element name="fabricator" type="tns:Fabricator" maxOccurs="unbounded" />
+                    </sequence>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute name="id" type="ID"  use="required"/>
+        <attribute name="name" type="string" use="required" />
+    </complexType>
+    <complexType name="Analog">
+        <attribute name="substitute" type="string" use="required" />
+    </complexType>
+    <complexType name="Fabricator">
+        <sequence>
+            <element name="certificate" type="tns:Certificate"/>
+            <element name="versions">
+                <complexType>
+                    <sequence>
+                        <element name="version" type="tns:Version" maxOccurs="unbounded" />
+                    </sequence>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute name="pharm" type="string" use="required" />
+    </complexType>
+    <complexType name="Version">
+        <sequence>
+            <element name="packs">
+                <complexType>
+                    <sequence>
+                        <element name="pack" type="tns:Package" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute name="form" type="tns:Letters" use="required" />
+    </complexType>
+    <complexType name="Dosage">
+        <attribute name="portion" type="string" use="required"/>
+        <attribute name="period" type="string" use="required" />
+    </complexType>
+    <complexType name="Certificate">
+        <attribute name="number" type="ID" use="required" />
+        <attribute name="issue" type="date"/>
+        <attribute name="expiration" type="date" use="required" />
+    </complexType>
+    <complexType name="Package">
+        <sequence>
+            <element name="type" default="tough">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="tough"></enumeration>
+                        <enumeration value="semi-rigid"></enumeration>
+                        <enumeration value="soft"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="quantity" type="tns:Number-Text" />
+            <element name="price" type="tns:Number-Text" />
+        </sequence>
+    </complexType>
+    <simpleType name="Letters">
+        <restriction base="string">
+            <pattern value="\s*[a-zA-Zа-яА-Я]+\s*"></pattern>
+        </restriction>
+    </simpleType>
+    <simpleType name="Number-Text">
+        <restriction base="string">
+            <pattern value="\s*(\d+|\d+\.\d+)\s+[a-zA-Zа-яА-Я]+\s*"></pattern>
+        </restriction>
+    </simpleType>
+    <complexType name="Medicament">
+        <complexContent>
+            <extension base="tns:Medicine">
+               <sequence>
+                   <element name="group" type="string" />
+                   <element name="analogs">
+                       <complexType>
+                           <sequence>
+                               <element name="analog" type="tns:Analog" maxOccurs="unbounded" />
+                           </sequence>
+                       </complexType>
+                   </element>
+               </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <element name="medicament" type="tns:Medicament" substitutionGroup="tns:medicine"></element>
+    <complexType name="Supplement">
+        <complexContent>
+            <extension base="tns:Medicine">
+                <sequence>
+                    <element name="vitamins">
+                        <complexType>
+                            <sequence>
+                                <element name="vitamin" type="string" maxOccurs="unbounded" />
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <element name="supplement" type="tns:Supplement" substitutionGroup="tns:medicine"></element>
+
+</schema>

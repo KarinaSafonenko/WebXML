@@ -1,0 +1,85 @@
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.example.com/medicines"
+           xsi:schemaLocation="http://www.example.com/medicines  medicines.xsd">
+    <medicament id="medsn001" name="Kaptopril">
+        <fabricators>
+            <fabricator pharm="Farmacor production">
+                <certificate number="a1332" issue=" 2017-02-05" expiration="2018-03-05"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>20 pieces</quantity>
+                                <price>3 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>40 pieces</quantity>
+                                <price>5 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+            <fabricator pharm="Farmland">
+                <certificate number="akj32" issue="2017-02-01" expiration="2019-03-25"/>
+                <versions>
+                    <version form="pills">
+                        <packs>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>50 pieces</quantity>
+                                <price>2.14 rub</price>
+                            </pack>
+                            <pack>
+                                <type>tough</type>
+                                <quantity>20 pieces</quantity>
+                                <price>1.74 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Angiopril"></analog>
+            <analog substitute="Blocordil"></analog>
+            <analog substitute="Kapoten"></analog>
+        </analogs>
+    </medicament>
+    <medicament id="medsn002" name="Cetrifacson">
+        <dosage portion="1-2 g." period="3 times a day"/>
+        <fabricators>
+            <fabricator pharm="Shrea Life">
+                <certificate number="jhd89" issue="2017-01-05" expiration="2019-03-05"/>
+                <versions>
+                    <version form="powder">
+                        <packs>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>50 pieces</quantity>
+                                <price>823 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                    <version form="flacon">
+                        <packs>
+                            <pack>
+                                <type>semi-rigid</type>
+                                <quantity>1 piece</quantity>
+                                <price>35 rub</price>
+                            </pack>
+                        </packs>
+                    </version>
+                </versions>
+            </fabricator>
+        </fabricators>
+        <group>Ingibitor</group>
+        <analogs>
+            <analog substitute="Loracson"></analog>
+            <analog substitute="Sulbatrokson"></analog>
+        </analogs>
+    </medicament>
+</medicines>
